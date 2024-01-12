@@ -15,6 +15,7 @@ RUN \
     autoconf=2.71-r2 \
     automake=1.16.5-r2 \
     build-base=0.5-r3 \
+    musl-dev=1.2.4_git20230717-r4 \
     py3-pip=23.3.1-r0 \
     python3-dev=3.11.6-r1 \
   \
