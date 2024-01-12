@@ -1,0 +1,14 @@
+#!/command/with-contenv bashio
+# shellcheck shell=bash
+# ==============================================================================
+# Home Assistant Community Add-on: SABnzbd
+# Runs SABnzbd
+# ==============================================================================
+
+bashio::log.info 'Starting SABnzbd...'
+
+exec python3 /opt/SABnzbd.py \
+    --config-file /config \
+    --server 0.0.0.0 \
+    --console \
+    --disable-file-log

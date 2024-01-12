@@ -1,0 +1,13 @@
+#!/command/with-contenv bashio
+# shellcheck shell=bash
+# ==============================================================================
+# Home Assistant Community Add-on: SABnzbd
+# Runs the Nginx daemon
+# ==============================================================================
+
+# Wait for SABnzbd to become available
+bashio::net.wait_for 8080
+
+bashio::log.info "Starting NGinx..."
+
+exec nginx
