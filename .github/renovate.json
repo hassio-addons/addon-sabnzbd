@@ -49,14 +49,6 @@
       "matchDatasources": ["docker"],
       "matchUpdateTypes": ["minor", "patch"],
       "automerge": true
-    },
-    {
-      "fileMatch": ["/Dockerfile$"],
-      "matchStrings": [
-        "ARG SABNZBD_VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s+"
-      ],
-      "datasourceTemplate": "github-releases",
-      "depNameTemplate": "sabnzbd/sabnzbd"
     }
   ]
 }
