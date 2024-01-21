@@ -33,6 +33,14 @@
       "datasourceTemplate": "github-releases",
       "depNameTemplate": "animetosho/par2cmdline-turbo",
       "extractVersionTemplate": "^v(?<version>.*)$"
+    },
+    {
+      "fileMatch": ["/Dockerfile$"],
+      "matchStrings": [
+        "ARG SABNZBD_VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s+"
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "sabnzbd/sabnzbd"
     }
   ],
   "packageRules": [
