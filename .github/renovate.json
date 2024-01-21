@@ -24,6 +24,15 @@
       "versioningTemplate": "loose",
       "datasourceTemplate": "repology",
       "depNameTemplate": "alpine_3_19/{{package}}"
+    },
+    {
+      "fileMatch": ["/Dockerfile$"],
+      "matchStrings": [
+        "ARG PAR2CMDLINE_TURBO_VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s+"
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "animetosho/par2cmdline-turbo",
+      "extractVersionTemplate": "^v(?<version>.*)$"
     }
   ],
   "packageRules": [
@@ -48,15 +57,6 @@
       ],
       "datasourceTemplate": "github-releases",
       "depNameTemplate": "sabnzbd/sabnzbd"
-    },
-    {
-      "fileMatch": ["/Dockerfile$"],
-      "matchStrings": [
-        "ARG PAR2CMDLINE_TURBO_VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s+"
-      ],
-      "datasourceTemplate": "github-releases",
-      "depNameTemplate": "animetosho/par2cmdline-turbo",
-      "extractVersionTemplate": "^v(?<version>.*)$"
     }
   ]
 }
