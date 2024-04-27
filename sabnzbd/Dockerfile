@@ -22,7 +22,7 @@ RUN \
   \
   && apk add --no-cache \
     7zip=23.01-r0 \
-    nginx=1.24.0-r15 \
+    nginx=1.24.0-r16 \
     py3-setuptools=68.2.2-r0 \
     python3=3.11.9-r0 \
     unzip=6.0-r14 \
