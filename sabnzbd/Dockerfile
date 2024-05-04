@@ -6,7 +6,7 @@ FROM ${BUILD_FROM}
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Setup base
-ARG SABNZBD_VERSION=4.3.0
+ARG SABNZBD_VERSION=4.3.1
 ARG UNRAR_VERSION=6.2.12
 ARG PAR2CMDLINE_TURBO_VERSION=1.1.1
 # hadolint ignore=DL3003,DL3042
