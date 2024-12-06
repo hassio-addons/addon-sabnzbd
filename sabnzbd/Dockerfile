@@ -24,7 +24,7 @@ RUN \
     7zip=23.01-r0 \
     nginx=1.26.2-r0 \
     py3-setuptools=70.3.0-r0 \
-    python3=3.12.7-r0 \
+    python3=3.12.8-r0 \
     unzip=6.0-r14 \
   \
   && curl -J -L -o /tmp/unrar.tar.gz \
