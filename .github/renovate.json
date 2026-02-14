@@ -25,7 +25,7 @@
       ],
       "versioningTemplate": "loose",
       "datasourceTemplate": "repology",
-      "depNameTemplate": "alpine_3_22/{{package}}"
+      "depNameTemplate": "alpine_3_23/{{package}}"
     },
     {
       "customType": "regex",
@@ -50,6 +50,8 @@
   "packageRules": [
     {
       "matchDatasources": ["repology"],
+      "matchPackageNames": ["alpine_3_23/**"],
+      "versioning": "loose",
       "automerge": true
     },
     {
