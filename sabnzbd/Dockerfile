@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base:19.0.0
+ARG BUILD_FROM=ghcr.io/hassio-addons/base:20.0.1
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -13,19 +13,19 @@ ARG PAR2CMDLINE_TURBO_VERSION=f94ea31ecce17d19f6931a58c1719a25758ae3a0
 RUN \
   apk add --no-cache --virtual .build-dependencies \
     autoconf=2.72-r1 \
-    automake=1.17-r1 \
+    automake=1.18.1-r0 \
     build-base=0.5-r3 \
-    linux-headers=6.14.2-r0 \
-    musl-dev=1.2.5-r10 \
-    py3-pip=25.1.1-r0 \
+    linux-headers=6.16.12-r0 \
+    musl-dev=1.2.5-r21 \
+    py3-pip=25.1.1-r1 \
     python3-dev=3.12.12-r0 \
   \
   && apk add --no-cache \
-    7zip=24.09-r0 \
+    7zip=25.01-r0 \
     nginx=1.28.2-r0 \
-    py3-setuptools=80.9.0-r0 \
+    py3-setuptools=80.9.0-r2 \
     python3=3.12.12-r0 \
-    unzip=6.0-r15 \
+    unzip=6.0-r16 \
   \
   && curl -J -L -o /tmp/unrar.tar.gz \
       "https://www.rarlab.com/rar/unrarsrc-${UNRAR_VERSION}.tar.gz" \
