@@ -1,8 +1,8 @@
 #!/command/with-contenv bashio
 # shellcheck shell=bash
 # ==============================================================================
-# Home Assistant Community Add-on: SABnzbd
-# This files adds some patches to the add-on
+# Home Assistant Community App: SABnzbd
+# This files adds some patches to the app
 # ==============================================================================
 if ! bashio::fs.file_exists '/config/sabnzbd.ini'; then
     bashio::log.info "First run! Setting up some folders."
